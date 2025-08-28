@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img {
+    height: 300px;
+    float: right;
+}
+
+h1 {
+    padding-bottom: 10px;
+}
+
+.img-description {
+    display: block;
+    font-size: 20px;
+    font-style: oblique;
+    padding: 10px 0;
+    border: 2px solid blueviolet;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+}
+
+.clearfix::after,
+.clearfix::before {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.article {
+    position: relative;
+}
+
+.container {
+    width: 1000px;
+    height: 300px;
+    border: 5px solid green;
+    overflow: scroll;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.center {
+    width: 1000px;
+    margin-inline: auto;
+}
+
+.relative {
+    width: 100px;
+    height: 50px;
+    border: 2px solid grey;
+    position: relative;
+    top: 50px;
+    left: 800px;
+}
+
+.absolut {
+    width: 100px;
+    height: 50px;
+    border: 2px solid grey;
+    position: absolute;
+    color: red;
+    top: 10px;
+    left: 800px;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.menu {
+    background-color: aqua;
+    width: 600px;
+    /* position: fixed; */
+    z-index: 2;
+}
+
+.example {
+    width: 250px;
+    height: 1500px;
+    background-color: green;
+
+}
+
+.fixed {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(72, 214, 21);
+    position: fixed;
+    top: 700px;
+
+
+}
+
+.sticky {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(223, 190, 90);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+
+}
+
+.second {
+    height: 500px;
+}
+
+.parent {
+    display: flex;
+    width: 1000px;
+    justify-content: space-around;
+}
+
+.content {
+    display: unset;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+}
+
+.description {
+    text-align: center;
+    margin-top: 30px;
+}
